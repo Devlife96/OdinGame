@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <div class="main-frame d-flex">
+
+        <div class="nav-menu flex-10 bg-gray-dark fixed">
+            <div class="nav-item h-full-vh  d-flex flex-column justify-content-between ">
+                <ul class="nav-link d-flex flex-column gap-1 mt-1">
+                    <li class=" nav-link-item w-full h-70 bg-gray rounded-5 text-center">
+                        <a href="../index.html"
+                            class=" h-full w-full d-block  fs-4 d-flex flex-column justify-content-center"><i
+                                class="fa-solid fa-house mb-xs"></i> <span class="fs-small">Home</span></a>
+                    </li>
+                    <li class=" nav-link-item w-full h-70 bg-gray rounded-5 text-center">
+                        <a href="./historicity.html"
+                            class=" h-full w-full d-block fs-4 d-flex flex-column justify-content-center"><i
+                                class="fa-solid fa-clock-rotate-left mb-xs"></i> <span class="fs-small">Historicity</span></a>
+                    </li>
+                    <li class=" nav-link-item w-full h-70 bg-gray rounded-5 text-center">
+                        <a href="play.html"
+                            class=" active h-full w-full d-block fs-4 d-flex flex-column justify-content-center"><i
+                                class="fa-solid fa-play mb-xs"></i> <span class="fs-small">Play</span></a>
+                    </li>
+                </ul>
+                <div class="w-70 h-70 bg-gray rounded-pill mb-1 profile">
+                    <a href="" class="h-full w-full d-block fs-4  middle-content"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="frame-container flex-90 bg-gray-light position-relative">
+            <div class="hero w-full   h-vh-30 py-4 position-relative hero-play">
+                <div class="overlay-gray"></div>
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="hero-text-sm w-percent-30 position-relative">
+                        <h1 class="fs-1 ft-slakley text-uppercase">enjoy your <span class="text-blue">round</span> <i class="fa-regular fa-face-smile text-yellow"></i>  !</h1>
+                        
+                    </div>
+                </div>
+            </div>
+            <section class="historicity py-3 mb-1">
+                <div class="container">
+                    <div class="d-flex justify-content-between mb-2">
+                        <div class="headline d-flex align-center gap-1 ">
+                            <p class="">Round of Game</p>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                        <!-- <button class="reset   bg-gray rounded-3 fs-normal  text-blue fw-500"> <i class="fa-solid fa-rotate-right"></i>  Reset Game</button> -->
+                        <div class="round-info  d-flex justify-content-end align-center gap-small">
+                            <p class="fs-4 text-white-gray"> Round</p>
+                            <div class="box-score w-100 h-70 rounded-5  ft-slakley fs-2 text-center middle-content">0</div>
+                        </div>
+                    
+                    <div class="box-message w-middle  rounded-5 p-1 text-center text-white-gray mb-2 round-winner">No info to display.. </div>
+                    <div class="d-flex justify-content-center align-center gap-1 mb-2 mb-1">
+                        <div class="text-center">
+                        <div class="box-round-score w-100 h-100  rounded-5 text-center middle-content mb-small">
+                            <h1 class="fs-1 fw-600 ft-slakley text-uppercase display-player-score">0</h1>
+                        
+                        </div>
+                        <p class="fs-small text-white-gray">Player Score</p>
+                        </div>
+                       <div class="text-center">
+                        <div class="box-round-score w-100 h-100  rounded-5 text-center middle-content mb-small">
+                            <h1 class="fs-1 fw-600 ft-slakley text-uppercase display-computer-score">0</h1>
+                        
+                        </div>
+                        <p class="fs-small text-white-gray">Computer Score</p>
+                       </div>
+                    </div>
+                    <p class="text-yellow error text-center mb-small"></p>
+                    <div class="box-choice d-flex justify-content-center gap-md flex-wrap">
+                        <div class="card-play w-200 h-auto bg-gray-dark  rounded-5 p-1 rockBtn">
+                            <div class="position-relative">
+                                <div
+                                    class="card-player w-70 h-70 rounded-pill mb-1 position-relative middle-content">
+                                    <i class="fa-solid fa-hand-back-fist fs-2 text-blue"></i>
+                                </div>
+                                <div class="card-player-bordered w-70 h-70   mb-1 position-absolute"></div>
+                            </div>
+                            <p class="mb-small text-white-gray">Click to choose Rock</p>
+                            <div class="score-container w-middle rounded-5  p-1 ft-slakley fs-4 text-center text-uppercase text-blue">
+                                Rock
+                            </div>
+                        </div>
+                        <div class="card-play w-200 h-auto bg-gray-dark  rounded-5 p-1 paperBtn">
+                            <div class="position-relative">
+                                <div class="card-player w-70 h-70 rounded-pill mb-1 position-relative middle-content">
+                                    <i class="fa-solid fa-hand fs-2 text-blue "></i>
+                                </div>
+                                <div class="card-player-bordered w-70 h-70   mb-1 position-absolute"></div>
+                            </div>
+                            <p class="mb-small text-white-gray">Click to choose Paper</p>
+                            <div class="score-container w-middle rounded-5  p-1 ft-slakley fs-4 text-center text-uppercase text-blue">
+                                Paper
+                            </div>
+                        </div>
+                        <div class=" card-play w-200 h-auto bg-gray-dark  rounded-5 p-1 scissorsBtn">
+                            <div class="position-relative">
+                                <div class="card-player w-70 h-70  rounded-pill mb-1 position-relative middle-content">
+                                <i class="fa-solid fa-hand-scissors fs-2 text-blue"></i>
+                                </div>
+                                <div class="card-player-bordered w-70 h-70    mb-1 position-absolute"></div>
+                            </div>
+                            <p class="mb-small text-white-gray">Click to choose Scissors</p>
+                            <div class="score-container w-middle rounded-5  p-1 ft-slakley fs-4 text-center text-uppercase text-blue">
+                                Scissors
+                            </div>
+                        </div>
+                        
+                    </div>                    
+                </div>
+            </section>
+
+            <div class="modal-container position-absolute">
+                <div class="modal w-400 h-auto rounded-5 bg-gray-light position-fixed">
+                    <div class="w-70 h-70 bg-gray mx-auto rounded-5 mb-small middle-content">
+                        <i class="fa-solid fa-face-smile fs-2 text-blue"></i>
+                    </div>
+                    <p class="text-white-gray fs-4 mb-small text-yellow fw-500">Game over ! </p>
+
+                    <div class="modal-line mx-auto w-200 bg-blue mb-1"></div>
+                    <div class="mx-auto w-40 h-40 rounded-pill award middle-content text-yellow"></div>
+                    <h1 class=" text-uppercase ft-slakley player-name"></h1>
+                    <div class="flex justify-content-center gap-small mb-small player-star"></div>
+                    <p class="modal-text">You are the winner of this round with</p>
+                    <h1 class=" text-uppercase ft-slakley fs-1 mb-1 modal-score"></h1>
+                    <div class="btn-container position-relative mx-auto mb-3">
+                        <a href="" class="btn first  bg-gray rounded-3 text-blue fw-500"> Start a new Round</a>
+                        <a href="" class="btn modal-border   position-absolute "> Start a new Round</a>
+                    </div>
+                    <div class="close w-30 h-30 rounded-pill  middle-content ">
+                        <i class="fa-solid fa-xmark text-yellow"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

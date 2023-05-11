@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="main-frame d-flex">
+        
+        <div class="nav-menu flex-10 bg-gray-dark fixed">
+            <div class="nav-item h-full-vh  d-flex flex-column justify-content-between ">
+                <ul class="nav-link d-flex flex-column gap-1 mt-1">
+                    <li class=" nav-link-item w-full h-70 bg-gray rounded-5 text-center">
+                        <a href="index.html" class="home active h-full w-full d-block  fs-4 d-flex flex-column justify-content-center"><i class="fa-solid fa-house mb-xs"></i> <span class="fs-small">Home</span></a>
+                    </li>
+                    <li class=" nav-link-item w-full h-70 bg-gray rounded-5 text-center">
+                        <a href="./html/historicity.html" class="history h-full w-full d-block fs-4 d-flex flex-column justify-content-center"><i class="fa-solid fa-clock-rotate-left mb-xs"></i> <span class="fs-small">Historicity</span></a>
+                    </li>
+                    <li class=" nav-link-item w-full h-70 bg-gray rounded-5 text-center">
+                        <a href="./html/play.html" class="h-full w-full d-block fs-4 d-flex flex-column justify-content-center"><i class="fa-solid fa-play mb-xs"></i> <span class="fs-small">Play</span></a>
+                    </li>
+                </ul>
+                <div class="w-70 h-70 bg-gray rounded-pill mb-1 profile">
+                    <a href="" class="h-full w-full d-block fs-4  middle-content"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="frame-container flex-90 bg-gray-light">
+           <div class="hero w-full   h-vh-80 py-4 position-relative hero-home mb-3">
+            <div class="overlay-gray"></div>
+                <div class="overlay"></div>
+                <div class="container">
+                    <div class="hero-text">
+                        <h2 class="ft-shadows-light">Hi!,</h2>
+                        <h2 class="ft-shadows-light">Welcome to</h2>
+                        <h1 class="fs-1 ft-slakley text-uppercase">Rock, Paper Scissors</h1>
+                        <p class="mb-1 ft-shadows-light fw-300 fs-normal">it always fun to play, enjoy the game</p>
+                        <div class="btn-container position-relative">
+                            <a href="./html/play.html" class="btn first  bg-gray rounded-3 position-absolute text-blue fw-500"> Start a Round</a>
+                            <a href="./html/play.html" class="btn second   position-absolute "> Start a Round</a>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <section class="historicity py-3">
+                <div class="container">
+                    <div class="headline-container d-flex justify-content-between mb-2">
+                        <div class="headline d-flex align-center gap-1 ">
+                            <p>Recent Game</p>
+                            <div class="line"></div>
+                        </div>
+
+                        <a href="./html/historicity.html">See more</a>
+                    </div>
+                    <div class="d-flex gap-1 flex-wrap home-data mb-4">
+                                               
+                    </div>
+                </div>
+           </section>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

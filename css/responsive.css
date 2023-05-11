@@ -1,0 +1,260 @@
+/*responsive*/
+@media screen and (max-width:576px) {
+    .container{
+        width: 90%;
+    }
+    .main-frame{
+        flex-direction: column;
+    }
+    .nav-menu{
+        width: 100%;
+        padding: 0.5rem;
+        position: fixed;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 999;
+    }
+    .nav-menu .nav-item .nav-link{
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+    .nav-item{
+        width: 100%;
+        height:auto;
+    }
+    .nav-link li{
+        width: auto;
+        min-width: 50px;
+        height: auto;
+        padding: 0.3rem;
+        background: none;
+    }
+    .nav-link li a {
+        font-size: 1rem;
+    }
+    .nav-link li a span{
+        font-size: 0.7rem;
+    }
+    .nav-menu + .frame-container{
+        margin-left: 0;
+    }
+    .profile{
+        display: none;
+    }
+
+    .hero-text{
+        transform: translateY(15vh);
+    }
+    
+    .headline  p , .headline-container a{
+        font-size: 0.8rem;
+    }
+    .line{
+        width: 80px;
+    }
+
+    .historicity{
+        padding: 1.5rem 0;
+    }
+    .home-data{
+        flex-wrap: wrap;
+    }
+    .card{
+        flex-basis: 100%;
+    }
+
+    .hero-historicity{
+        height: 35vh;
+    }
+    .hero-play{
+        height: 50vh;
+    }
+    .historicity-title{
+        font-size: 2.441rem;
+        margin-bottom: 1rem;
+    }
+
+    /*play*/
+    .round-info{
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    .box-message{
+        width: 80%;
+    }
+    .box-choice{
+        gap: 0.4rem;
+        justify-content: start;
+    }
+    .box-choice p{display: none;}
+    .card-play{
+        width: 70px;
+    }
+    .card-player, .card-player-bordered{
+        width: 50px;
+        height: 50px;
+    }
+    .card-player i{
+        font-size: 1.5rem;
+    }
+    .score-container{
+        padding: 0.5rem;
+        text-align: left;
+        font-size: 0.6rem;
+    }
+}
+
+
+@media screen and (min-width:768px),
+(min-width:992px) {
+    body{
+        font-size: 1.5rem;
+    }
+    .container {
+            width: 90%;
+        }
+    
+        .main-frame {
+            flex-direction: column;
+        }
+    
+        .nav-menu {
+            width: 100%;
+            padding: 0.5rem;
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 999;
+        }
+    
+        .nav-menu .nav-item .nav-link {
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 0;
+        }
+    
+        .nav-item {
+            width: 100%;
+            height: auto;
+        }
+    
+        .nav-link li {
+            width: auto;
+            min-width: 50px;
+            height: auto;
+            padding: 0.3rem;
+            background: none;
+        }
+    
+        .nav-link li a,.nav-link li a span {
+            font-size: 1.5rem;
+        }
+        .nav-link li a span {
+            font-size: 1.3rem;
+        }
+        
+        .nav-menu+.frame-container {
+            margin-left: 0;
+        }
+        .profile{
+            display: none;
+        }
+        .hero-home{
+            height: 60vh;
+        }
+
+        .card {
+            flex:1 0 42%;
+        }
+        .hero-play {
+            height: 25vh;
+        }
+        .hero-text-sm{
+            width: 80%;
+        }
+
+        .round-info {
+            justify-content: space-between;
+            margin-bottom: 1rem;
+        }
+
+        .box-message {
+            width: 80%;
+        }
+
+        .box-choice {
+            flex-wrap: nowrap;
+            gap: 0.4rem;
+            margin-bottom: 3rem;
+        }
+
+        /*modal*/
+        .modal{
+            width: 600px;
+        }
+        .modal-border{
+            left:150px;
+        }
+}
+
+@media screen and (min-width:1200px){
+    body {
+            font-size: 1rem;
+        }
+    .container {
+            width: 90%;
+        }
+    
+        .main-frame{
+            flex-direction: row;
+        }
+    
+       .nav-menu+.frame-container {
+            margin-left: 6%;
+        }
+
+        .nav-menu {
+            width: 6%;
+            position: fixed;
+            left: 0;
+        }
+        .nav-item{
+            height: 100vh;
+        }
+
+        .nav-menu .nav-item .nav-link {
+            flex-direction: column;
+            padding-top: 1rem;
+        }
+        .nav-link li {
+            height: 70px;
+            background: #454545;
+        }
+
+        .nav-link li a,
+        .nav-link li a span {
+            font-size: 1.5rem;
+        }
+
+        .nav-link li a span {
+            font-size: 0.75rem;
+        }
+        .profile {
+            display: block;
+        }
+        .hero-play, .hero-historicity {
+            height: 30vh;
+        }
+        .hero-text-sm {
+            width: 30%;
+        }
+        .box-message{
+            width: 50%;
+        }
+        .card {
+            flex:0 1 21.5%;
+        }
+}
